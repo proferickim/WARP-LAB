@@ -1,0 +1,16 @@
+---
+title: Research
+permalink: /research/
+intro: Intelligent wireless systems, studied through algorithms, simulation, and experiment.
+---
+<div class="research-page-intro">
+  <p>Our work connects wireless AI and radio perception with the realities of radio hardware. Signal processing, optimization, and machine learning form the algorithmic foundation; over-the-air prototypes, software-defined radio platforms, and realistic simulations provide the means to evaluate it.</p>
+</div>
+{% for area in site.data.research %}
+<section class="research-section" id="{{ area.id }}">
+  <span class="research-index" aria-hidden="true">0{{ forloop.index }}</span>
+  <div><h2>{{ area.title }}</h2><p>{{ area.description }}</p><a class="text-link" href="{{ area.paper | relative_url }}">Related publication: {{ area.paper_label }} <span aria-hidden="true">→</span></a></div>
+</section>
+{% endfor %}
+<p class="section-end-link"><a href="{{ '/publications/' | relative_url }}">View all publications →</a></p>
+

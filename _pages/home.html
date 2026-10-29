@@ -1,0 +1,29 @@
+---
+layout: homelay
+title: Home
+permalink: /
+---
+<div class="welcome-block">
+  <p class="eyebrow">Dankook University</p>
+  <h1>Welcome to WARP Lab</h1>
+  <p class="intro-lead">We study wireless AI and radio perception, connecting intelligent algorithms with practical wireless systems.</p>
+  <p>Led by <a href="{{ '/people/' | relative_url }}">Prof. Yonghwi Kim</a>, our research brings together signal processing, optimization, and machine learning for next-generation communications and sensing. We develop and evaluate ideas through over-the-air experiments, software-defined radios, and system-level simulations.</p>
+</div>
+<figure class="research-overview">
+  <img src="{{ '/images/research-overview.svg' | relative_url }}" width="780" height="248" alt="Wireless AI, radio perception, and radio platforms connected through prototyping and experimental validation.">
+  <figcaption>From algorithms to working radio systems.</figcaption>
+</figure>
+<section class="research-summary">
+  <div class="section-heading"><h2>Research</h2><a href="{{ '/research/' | relative_url }}">Explore our work <span aria-hidden="true">→</span></a></div>
+  <dl class="research-lines">
+    {% for area in site.data.research %}
+    <div><dt><a href="{{ '/research/' | relative_url }}#{{ area.id }}">{{ area.title }}</a></dt><dd>{{ area.short }}</dd></div>
+    {% endfor %}
+  </dl>
+</section>
+<section class="selected-publications">
+  <div class="section-heading"><h2>Selected publications</h2><a href="{{ '/publications/' | relative_url }}">All papers <span aria-hidden="true">→</span></a></div>
+  {% assign selected_papers = site.publications | where: 'selected', true %}
+  {% include publication-list.html papers=selected_papers %}
+</section>
+

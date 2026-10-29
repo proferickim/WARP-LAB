@@ -1,0 +1,17 @@
+<header class="site-header">
+  <div class="container-fluid header-inner">
+    <a class="lab-brand" href="{{ '/' | relative_url }}" aria-label="WARP Lab home">
+      <span class="brand-name">WARP <span>Lab</span></span>
+      <span class="brand-subtitle">Wireless AI and Radio Perception</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu <span aria-hidden="true">☰</span></button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <ul>
+        {% for item in site.data.navigation %}
+        <li><a href="{{ item.url | relative_url }}"{% if page.url == item.url or page.nav_parent == item.title or page.collection == 'publications' and item.title == 'Publications' %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>
+

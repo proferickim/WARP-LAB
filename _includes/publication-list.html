@@ -1,0 +1,15 @@
+{% assign ordered_papers = include.papers | sort: 'date' | reverse %}
+<ol class="publication-list">
+  {% for paper in ordered_papers %}
+  <li>
+    <span class="paper-year">{{ paper.date | date: '%Y' }}</span>
+    <div>
+      <h3><a href="{{ paper.url | relative_url }}">{{ paper.title }}</a></h3>
+      <p class="paper-venue">{{ paper.venue }}</p>
+      {% if include.show_authors %}<p class="paper-authors">{{ paper.authors }}</p>{% endif %}
+      {% if paper.paperurl %}<a class="paper-external" href="{{ paper.paperurl }}">Paper <span aria-hidden="true">↗</span></a>{% endif %}
+    </div>
+  </li>
+  {% endfor %}
+</ol>
+

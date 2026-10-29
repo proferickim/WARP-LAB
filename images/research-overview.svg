@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="248" viewBox="0 0 780 248" role="img" aria-labelledby="title desc">
+  <title id="title">WARP Lab research directions</title><desc id="desc">Wireless AI, radio perception, and wireless platforms connected through prototyping and experimental validation.</desc>
+  <rect width="780" height="248" fill="#ffffff"/>
+  <g stroke="#d0dce6" stroke-width="1"><path d="M260 29v158M520 29v158M30 195h720"/></g>
+  <g stroke="#1764ab" stroke-width="2.4" fill="none">
+    <path d="m89 58 42 33-42 33m42-33 42-33m-42 33 42 33M89 58h84M89 124h84"/>
+    <g fill="#ffffff"><circle cx="89" cy="58" r="7"/><circle cx="89" cy="124" r="7"/><circle cx="131" cy="91" r="8" fill="#1764ab"/><circle cx="173" cy="58" r="7"/><circle cx="173" cy="124" r="7"/></g>
+    <path d="M354 119V89m-14 30h28m-14-47v17m-9-5 9-12 9 12M378 64a43 43 0 0 1 0 58M391 53a59 59 0 0 1 0 80M403 42a75 75 0 0 1 0 102" stroke="#08744d"/>
+    <path d="m437 76 13 13-13 13-13-13z" fill="#08744d" stroke="#08744d"/>
+    <rect x="604" y="58" width="92" height="66" rx="2"/>
+    <path d="M614 105h72M624 73v17m17-17v17m17-17v17m17-17v17M626 124v10m48-10v10"/>
+    <circle cx="619" cy="115" r="2" fill="#08744d" stroke="#08744d"/>
+  </g>
+  <g fill="#164f86" font-family="Gill Sans, Gill Sans MT, Calibri, sans-serif" font-size="22" text-anchor="middle"><text x="130" y="165">Wireless AI</text><text x="390" y="165" fill="#08744d">Radio Perception</text><text x="650" y="165">Wireless Platforms</text></g>
+  <text x="390" y="226" text-anchor="middle" fill="#405366" font-family="Gill Sans, Gill Sans MT, Calibri, sans-serif" font-size="17">Over-the-air experiments · Software-defined radio · System-level simulation</text>
+</svg>
+

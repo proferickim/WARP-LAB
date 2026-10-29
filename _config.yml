@@ -1,0 +1,40 @@
+title: WARP Lab
+subtitle: Wireless AI and Radio Perception
+description: Wireless AI and Radio Perception at Dankook University. Research in intelligent wireless systems, integrated sensing and communication, and practical radio platforms.
+url: https://proferickim.github.io
+baseurl: "/WARP-LAB"
+lang: en
+timezone: Asia/Seoul
+email: eric_kim@dankook.ac.kr
+scholar: https://scholar.google.com/citations?user=QuTIMZAAAAAJ
+institution: Dankook University
+department: Department of Electronics and Electrical Engineering
+office: Engineering Building 2, Room 411
+laboratory: Engineering Building 2, Room 303
+
+include: [_pages]
+exclude: [Gemfile, Gemfile.lock, vendor, README.md, THIRD_PARTY_NOTICES.md, scripts, .bundle, .sass-cache, .jekyll-cache]
+collections:
+  publications:
+    output: true
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: publication
+markdown: kramdown
+kramdown:
+  input: Kramdown
+  parse_block_html: true
+sass:
+  sass_dir: _sass
+  style: compressed
+plugins:
+  - jekyll-sitemap
+  - jekyll-redirect-from
+

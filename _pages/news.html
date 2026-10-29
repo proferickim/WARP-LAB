@@ -1,0 +1,11 @@
+---
+title: News
+permalink: /news/
+redirect_from: [/allnews.html]
+---
+<div class="news-archive">
+  {% for item in site.data.news %}
+  <article><h2>{{ item.date_label }}</h2><div><p>{{ item.text }}</p><a href="{{ item.url | relative_url }}">Read more →</a></div></article>
+  {% endfor %}
+</div>
+

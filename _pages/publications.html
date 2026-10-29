@@ -1,0 +1,17 @@
+---
+title: Publications
+permalink: /publications/
+intro: Research publications by Yonghwi Kim, including work preceding WARP Lab.
+---
+<p class="scholar-link">For citation information and further updates, visit <a href="{{ site.scholar }}">Google Scholar ↗</a>.</p>
+<section class="publication-category">
+  <h2>Journal papers</h2>
+  {% assign journal_papers = site.publications | where: 'category', 'manuscripts' %}
+  {% include publication-list.html papers=journal_papers show_authors=true %}
+</section>
+<section class="publication-category">
+  <h2>Conference papers</h2>
+  {% assign conference_papers = site.publications | where: 'category', 'conferences' %}
+  {% include publication-list.html papers=conference_papers show_authors=true %}
+</section>
+

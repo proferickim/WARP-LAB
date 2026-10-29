@@ -1,0 +1,19 @@
+- id: wireless-ai
+  title: Wireless AI
+  short: Learning and signal processing for intelligent, programmable radio systems.
+  description: We explore how AI can interact with communication, sensing, and radio resource management on open and programmable RAN platforms. Our interests include AI-RAN and learning-driven approaches that connect wireless algorithms with practical system operation.
+  paper: /publication/wcm25
+  paper_label: MIMO-OFDM semantic communications
+- id: radio-perception
+  title: Radio Perception
+  short: Integrated sensing and communication, from waveforms to over-the-air experiments.
+  description: We study integrated sensing and communication (ISAC) as a key application of next-generation wireless systems. Topics include near-field operation, wideband beamforming, OFDM sensing, and RF impairments, with interests extending toward satellite communications and synthetic aperture radar.
+  paper: /publication/wcl26
+  paper_label: OFDM uplink ISAC under RF imperfections
+- id: wireless-platforms
+  title: Wireless Platforms
+  short: Low-complexity algorithms tested on software-defined radios and realistic simulations.
+  description: We develop signal processing and optimization methods that can be tested on real radio platforms. Our work includes nonlinear self-interference cancellation and flexible duplex systems, connecting algorithms to over-the-air prototypes and system-level simulations.
+  paper: /publication/twc25
+  paper_label: Nonlinear self-interference cancellation for flexible duplex
+

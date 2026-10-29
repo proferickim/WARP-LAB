@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<article class="page-content publication-detail">
+  <a class="back-link" href="{{ '/publications/' | relative_url }}">← All publications</a>
+  <p class="eyebrow">{{ page.date | date: '%Y' }} · {% if page.category == 'conferences' %}Conference paper{% else %}Journal paper{% endif %}</p>
+  <h1>{{ page.title }}</h1>
+  <p class="paper-authors">{{ page.authors }}</p>
+  <p class="publication-venue">{{ page.venue }}</p>
+  <div class="publication-summary">{{ content }}</div>
+  <div class="publication-actions">
+    {% if page.paperurl %}<a class="button-link" href="{{ page.paperurl }}">Read the paper <span aria-hidden="true">↗</span></a>{% endif %}
+    <a href="{{ site.scholar }}">Google Scholar <span aria-hidden="true">↗</span></a>
+  </div>
+</article>
+
