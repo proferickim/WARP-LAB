@@ -1,17 +1,7 @@
 ---
 layout: default
 ---
-<div class="row home-layout">
-  <div id="homeid" class="col-sm-8 home-main">
-    {{ content }}
-  </div>
-  <aside id="newsid" class="col-sm-4 home-sidebar" aria-label="News and enquiries">
-    {% include news.html %}
-    <section class="sidebar-note">
-      <h2>Interested in our work?</h2>
-      <p class="ko-copy" lang="ko">연구 참여와 공동연구에 관심이 있으시면 연락해 주세요.</p>
-      <a class="text-link" href="{{ '/join/' | relative_url }}">Contact &amp; joining the lab <span aria-hidden="true">→</span></a>
-    </section>
-  </aside>
+<div class="home-layout">
+  {{ content }}
 </div>
 

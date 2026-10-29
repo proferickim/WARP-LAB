@@ -1,4 +1,7 @@
 ---
+figure: /images/research/flexible-duplex-testbed.webp
+figure_alt: "기지국과 송수신 안테나, 전력증폭기로 구성한 전이중 통신 실험 장치"
+figure_caption: "Fig. 8(a). Flexible-duplex proof-of-concept testbed; cropped from the original figure."
 title: "Low Complexity Frequency Domain Nonlinear Self-Interference Cancellation for Flexible Duplex"
 collection: "publications"
 category: "manuscripts"

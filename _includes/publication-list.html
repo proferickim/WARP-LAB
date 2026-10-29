@@ -1,6 +1,7 @@
 {% assign ordered_papers = include.papers | sort: 'date' | reverse %}
+{% assign paper_limit = include.limit | default: 1000 %}
 <ol class="publication-list">
-  {% for paper in ordered_papers %}
+  {% for paper in ordered_papers limit:paper_limit %}
   <li>
     <span class="paper-year">{{ paper.date | date: '%Y' }}</span>
     <div>
