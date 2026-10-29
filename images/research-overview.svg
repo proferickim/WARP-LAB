@@ -11,7 +11,7 @@
     <path d="M614 105h72M624 73v17m17-17v17m17-17v17m17-17v17M626 124v10m48-10v10"/>
     <circle cx="619" cy="115" r="2" fill="#08744d" stroke="#08744d"/>
   </g>
-  <g fill="#164f86" font-family="Gill Sans, Gill Sans MT, Calibri, sans-serif" font-size="22" text-anchor="middle"><text x="130" y="165">Wireless AI</text><text x="390" y="165" fill="#08744d">Radio Perception</text><text x="650" y="165">Wireless Platforms</text></g>
-  <text x="390" y="226" text-anchor="middle" fill="#405366" font-family="Gill Sans, Gill Sans MT, Calibri, sans-serif" font-size="17">Over-the-air experiments · Software-defined radio · System-level simulation</text>
+  <g fill="#164f86" font-family="Gill Sans, Gill Sans MT, Calibri, sans-serif" font-size="22" font-weight="300" text-anchor="middle"><text x="130" y="165">Wireless AI</text><text x="390" y="165" fill="#08744d">Radio Perception</text><text x="650" y="165">Wireless Platforms</text></g>
+  <text x="390" y="226" text-anchor="middle" fill="#405366" font-family="Gill Sans, Gill Sans MT, Calibri, sans-serif" font-size="17" font-weight="300">Over-the-air experiments · Software-defined radio · System-level simulation</text>
 </svg>
 

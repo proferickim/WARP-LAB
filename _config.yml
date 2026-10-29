@@ -11,6 +11,8 @@ institution: Dankook University
 department: Department of Electronics and Electrical Engineering
 office: Engineering Building 2, Room 411
 laboratory: Engineering Building 2, Room 303
+office_ko: 2공학관 411호
+laboratory_ko: 2공학관 303호
 
 include: [_pages]
 exclude: [Gemfile, Gemfile.lock, vendor, README.md, THIRD_PARTY_NOTICES.md, scripts, .bundle, .sass-cache, .jekyll-cache]

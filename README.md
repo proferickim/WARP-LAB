@@ -26,7 +26,16 @@ Allan Lab의 Jekyll/Bootstrap 구성을 바탕으로 만든 WARP Lab 홈페이�
 | 공통 레이아웃 | `_layouts/`, `_includes/` |
 | 배경색·서체·간격 | `css/main.scss` |
 
-Gill Sans는 컴퓨터에 설치된 서체를 사용합니다. 없는 환경에서는 Calibri 또는 시스템의 대체 서체가 표시됩니다. 상용 폰트 파일은 포함하지 않았습니다.
+## 서체와 한국어
+
+영문은 Gill Sans, 한글은 SUIT를 사용합니다. Gill Sans가 없는 환경에서는 Calibri, SUIT 순으로 대체됩니다. SUIT 가변 웹폰트는 저장소의 `fonts/`에 포함되어 외부 폰트 서비스 없이 표시됩니다. 상용 Gill Sans 파일은 포함하지 않았습니다.
+
+- 영문 본문·메뉴·제목: Light, 굵기 300
+- 한글 소개 본문: 굵기 350, 넉넉한 줄 간격
+- 작은 날짜 표기와 위치 안내: 굵기 400
+- 메뉴·논문 제목·상세 연구 내용은 영어, 메인 소개·연구 요약·문의 안내·위치는 한국어를 함께 사용합니다.
+
+한국어 문단은 `<p class="ko-copy" lang="ko">내용</p>`, 짧은 보조 설명은 `<p class="ko-caption" lang="ko">내용</p>` 형식으로 작성합니다. 연구 분야의 한글 요약은 `_data/research.yml`의 `short_ko`를 수정합니다. 서체와 굵기는 `css/main.scss`에서 조정할 수 있습니다.
 
 ## 로컬 실행
 

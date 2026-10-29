@@ -10,6 +10,13 @@ navigation. The Bootstrap source headers are retained.
 - Bootswatch styling: Copyright Thomas Park. MIT License.
 - The previous AcademicPages website's license is retained in `LICENSE`.
 
+## SUIT font
+
+`fonts/SUIT-Variable.woff2` is distributed under the SIL Open Font License 1.1.
+The complete copyright and license text is retained in `fonts/SUIT-LICENSE.txt`.
+Source: https://github.com/sun-typeface/SUIT (revision `55118d981336d8fce005eb62888c12c0568ef7b0`).
+The font file is unmodified. Gill Sans is used only when installed on the visitor's device.
+
 ## MIT License
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

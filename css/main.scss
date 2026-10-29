@@ -9,17 +9,30 @@ $blue: #1764ab;
 $green: #08744d;
 $muted: #526170;
 $rule: #d9e1e8;
+$sans: "Gill Sans", "Gill Sans MT", Calibri, "SUIT", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+
+// Keep Latin in Gill Sans where installed; serve the Korean font with the site.
+@font-face {
+  font-family: "SUIT";
+  src: url("../fonts/SUIT-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
 
 html { scroll-behavior: smooth; }
-body { margin: 0; padding: 0; background: $paper; color: $ink; font-family: "Gill Sans", "Gill Sans MT", Calibri, "Helvetica Neue", Arial, sans-serif; font-size: 18px; line-height: 1.57; font-weight: 400; }
+body { margin: 0; padding: 0; background: $paper; color: $ink; font-family: $sans; font-size: 18px; line-height: 1.6; font-weight: 300; }
 a { color: $green; text-decoration: none; text-underline-offset: 3px; }
 a:hover { color: #064d37; text-decoration: underline; }
 a:focus-visible, button:focus-visible { outline: 2px solid $blue; outline-offset: 5px; }
-h1, h2, h3, h4 { color: #143759; font-family: inherit; font-weight: 500; line-height: 1.2; }
+h1, h2, h3, h4 { color: #143759; font-family: inherit; font-weight: 300; line-height: 1.2; }
 h1 { font-size: 36px; margin: 0 0 22px; letter-spacing: -.45px; }
 h2 { font-size: 27px; margin: 0 0 18px; }
 h3 { font-size: 20px; }
 p { margin: 0 0 18px; }
+[lang="ko"] { word-break: keep-all; overflow-wrap: break-word; }
+.ko-copy { font-weight: 350; font-size: .96em; line-height: 1.8; }
+.ko-caption { font-size: 16px; font-weight: 350; line-height: 1.65; color: $muted; margin-top: -8px; margin-bottom: 16px; }
 img { max-width: 100%; height: auto; }
 .container-fluid { max-width: 1120px; padding-left: 32px; padding-right: 32px; margin: 0 auto; }
 .header-inner::before, .header-inner::after, .footer-grid::before, .footer-grid::after, .footer-bottom::before, .footer-bottom::after { display: none; }
@@ -29,8 +42,8 @@ img { max-width: 100%; height: auto; }
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 30px; min-height: 115px; }
 .lab-brand { display: block; color: #143759; padding: 20px 0; flex-shrink: 0; }
 .lab-brand:hover { color: #143759; text-decoration: none; }
-.brand-name { display: block; font-size: 34px; font-weight: 600; line-height: 1.1; letter-spacing: .15px; }
-.brand-name > span { font-weight: 400; color: $green; }
+.brand-name { display: block; font-size: 34px; font-weight: 300; line-height: 1.1; letter-spacing: .15px; }
+.brand-name > span { font-weight: 300; color: $green; }
 .brand-subtitle { display: block; margin-top: 7px; font-size: 15px; color: $muted; }
 .site-nav ul { display: flex; align-items: center; list-style: none; margin: 0; padding: 0; gap: 25px; }
 .site-nav a { display: inline-block; padding: 10px 0 8px; color: #273b50; font-size: 18px; border-bottom: 2px solid transparent; }
@@ -53,13 +66,14 @@ img { max-width: 100%; height: auto; }
 .research-lines > div { margin-bottom: 17px; }
 .research-lines dt a { color: $blue; }
 .research-lines > div:nth-child(2) dt a { color: $green; }
-.research-lines dt { font-size: 19px; font-weight: 500; }
+.research-lines dt { font-size: 20px; font-weight: 300; }
 .research-lines dd { font-size: 17px; line-height: 1.5; margin-top: 2px; color: $muted; }
+.research-lines dd.ko-copy { font-size: 16px; line-height: 1.75; margin-top: 4px; }
 .selected-publications { margin-top: 37px; }
 .news-panel.well { background: #143759; color: #f5f8fc; border: 1px solid #143759; border-top: 4px solid #14805b; box-shadow: none; border-radius: 2px; padding: 24px; margin: 0; }
 .news-panel h2 { color: #ffffff; font-size: 26px; margin: 0 0 20px; }
-.news-item { border-bottom: 1px solid #42617e; padding-bottom: 19px; margin-bottom: 19px; font-size: 16px; line-height: 1.5; }
-.news-item .news-date { font-size: 14px; letter-spacing: .35px; color: #bed0e2; margin: 0 0 6px; }
+.news-item { border-bottom: 1px solid #42617e; padding-bottom: 19px; margin-bottom: 19px; font-size: 17px; line-height: 1.5; font-weight: 300; }
+.news-item .news-date { font-size: 14px; font-weight: 400; letter-spacing: .35px; color: #bed0e2; margin: 0 0 6px; }
 .news-item p { margin-bottom: 8px; }
 .news-item a, .all-news { font-size: 15px; color: #82e1b3; }
 .news-panel a:hover { color: #b0f2ce; }
@@ -71,7 +85,7 @@ img { max-width: 100%; height: auto; }
 .publication-list > li { display: grid; grid-template-columns: 47px minmax(0, 1fr); gap: 16px; padding: 19px 0; border-bottom: 1px solid $rule; }
 .publication-list > li:first-child { padding-top: 4px; }
 .paper-year { color: $muted; font-size: 16px; padding-top: 2px; }
-.publication-list h3 { margin: 0 0 7px; font-size: 19px; line-height: 1.4; font-weight: 500; }
+.publication-list h3 { margin: 0 0 7px; font-size: 19px; line-height: 1.4; font-weight: 300; }
 .publication-list h3 a { color: #164f86; }
 .paper-venue { color: $muted; font-style: italic; font-size: 16px; margin: 0 0 3px; }
 .paper-external { font-size: 15px; }
@@ -114,14 +128,15 @@ img { max-width: 100%; height: auto; }
 .contact-layout h2 { font-size: 25px; }
 .contact-email { display: inline-block; margin-top: 5px; font-size: 23px; overflow-wrap: anywhere; }
 .contact-address { border-left: 1px solid $rule; padding-left: 35px; }
-.contact-address dt { font-weight: 500; margin-top: 19px; }
+.contact-address dt { font-weight: 400; margin-top: 19px; }
 .contact-address dd { color: $muted; }
+.contact-address [lang="ko"], .office-line [lang="ko"], .site-footer [lang="ko"] { font-weight: 400; }
 .news-archive { max-width: 850px; }
 .news-archive article { display: grid; grid-template-columns: 150px minmax(0,1fr); gap: 30px; padding: 25px 0; border-top: 1px solid $rule; }
 .news-archive h2 { font-size: 20px; }
 .site-footer { border-top: 3px solid #143759; background: #f4f7fa; padding: 31px 0 19px; font-size: 15px; color: #526170; line-height: 1.6; }
 .footer-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 50px; }
-.site-footer strong { color: #143759; font-size: 17px; font-weight: 500; display: block; margin-bottom: 7px; }
+.site-footer strong { color: #143759; font-size: 18px; font-weight: 400; display: block; margin-bottom: 7px; }
 .site-footer p { margin-bottom: 20px; }
 .footer-bottom { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding-top: 12px; font-size: 13px; }
 @media (min-width: 768px) and (max-width: 1000px) {
