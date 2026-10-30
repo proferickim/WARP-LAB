@@ -5,7 +5,7 @@ permalink: /
 ---
 <header class="home-intro">
   <p class="eyebrow">Dankook University</p>
-  <h1>Wireless AI and Radio Perception</h1>
+  <h1>Wireless AI and Radio Perception Lab. </h1>
   <p class="home-description">Wireless intelligence, from algorithms to real-world systems.</p>
 </header>
 <div class="home-feature">
@@ -13,7 +13,7 @@ permalink: /
     <a href="{{ '/publication/pieee24' | relative_url }}" aria-label="Read our survey on full-duplex network design">
       <img src="{{ '/images/research/full-duplex-network-overview.webp' | relative_url }}" width="2000" height="1361" fetchpriority="high" alt="Full-duplex network design, connecting radio hardware and self-interference cancellation with MAC protocols, user scheduling, and cellular networks">
     </a>
-    <figcaption><span>Full-duplex network design</span><a href="{{ '/publication/pieee24' | relative_url }}">Proceedings of the IEEE · 2024 · Fig. 1 <span aria-hidden="true">↗</span></a></figcaption>
+    <figcaption><span>Full-duplex Network Design</span><a href="{{ '/publication/pieee24' | relative_url }}">Proceedings of the IEEE (SCI(E) Top 0.4%), 2024 <span aria-hidden="true">↗</span></a></figcaption>
   </figure>
   <aside class="home-news" aria-label="Recent lab news">
     <div class="section-heading"><h2>News</h2><a href="{{ '/news/' | relative_url }}">All news <span aria-hidden="true">→</span></a></div>
@@ -23,7 +23,7 @@ permalink: /
   </aside>
 </div>
 <section class="research-gallery">
-  <div class="section-heading"><h2>Research in practice</h2><a href="{{ '/research/' | relative_url }}">Our research <span aria-hidden="true">→</span></a></div>
+  <div class="section-heading"><h2>Research Topics</h2><a href="{{ '/research/' | relative_url }}">Our research <span aria-hidden="true">→</span></a></div>
   <div class="research-cards">
     {% for area in site.data.research %}
     <article class="research-card">
@@ -37,15 +37,15 @@ permalink: /
 </section>
 <div class="home-bottom">
   <section class="selected-publications">
-    <div class="section-heading"><h2>Selected publications</h2><a href="{{ '/publications/' | relative_url }}">All papers <span aria-hidden="true">→</span></a></div>
+    <div class="section-heading"><h2>Selected Publications</h2><a href="{{ '/publications/' | relative_url }}">All Papers <span aria-hidden="true">→</span></a></div>
     {% assign selected_papers = site.publications | where: 'selected', true %}
     {% include publication-list.html papers=selected_papers limit=2 %}
   </section>
   <section class="home-contact">
-    <h2>Work with us</h2>
-    <p class="contact-description">Research opportunities and collaboration</p>
+    <h2>Recruiting (Including Undergraduate Intern)</h2>
+    <p class="contact-description">Research Opportunities and Collaboration</p>
     <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-    <p class="contact-more"><a href="{{ '/join/' | relative_url }}">Join WARP Lab <span aria-hidden="true">→</span></a></p>
+    <p class="contact-more"><a href="{{ '/join/' | relative_url }}">Join WARP Lab. <span aria-hidden="true">→</span></a></p>
   </section>
 </div>
 
