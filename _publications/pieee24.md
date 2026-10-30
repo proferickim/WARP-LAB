@@ -1,9 +1,12 @@
 ---
+figure: /images/research/full-duplex-network-overview.webp
+figure_alt: "Overview of full-duplex network design, from radio hardware to MAC protocols, user scheduling, and cellular networks"
+figure_caption: "Challenges for full-duplex network design. Proceedings of the IEEE, 2024, Fig. 1."
 title: "A State-of-the-art Survey on Full-duplex Network Design"
 collection: "publications"
 category: "manuscripts"
 permalink: "/publication/pieee24"
-excerpt: "This paper is comprehensive survey on full-duplex with network persipective"
+excerpt: "A comprehensive survey of full-duplex communication from a network perspective."
 date: "2024-02-27"
 venue: "Proceedings of the IEEE"
 paperurl: "https://ieeexplore.ieee.org/abstract/document/10449676"
@@ -13,4 +16,4 @@ layout: "publication"
 selected: false
 ---
 
-This paper is comprehensive survey on full-duplex with network perspective
+A comprehensive survey of full-duplex communication from a network perspective.

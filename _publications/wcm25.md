@@ -1,6 +1,6 @@
 ---
 figure: /images/research/semantic-architecture.webp
-figure_alt: "신경망과 MIMO-OFDM 테스트베드를 연결한 시스템 구성"
+figure_alt: "System architecture connecting neural networks with a MIMO-OFDM testbed"
 figure_caption: "Fig. 2. MIMO-OFDM semantic communications prototype."
 title: "Bridging Neural Networks And Wireless Systems with MIMO-OFDM Semantic Communications"
 collection: "publications"

@@ -6,14 +6,14 @@ permalink: /
 <header class="home-intro">
   <p class="eyebrow">Dankook University</p>
   <h1>Wireless AI and Radio Perception</h1>
-  <p class="ko-copy" lang="ko">무선 AI와 전파 인지 기술을 연구하고, 실제 시스템으로 검증합니다.</p>
+  <p class="home-description">Wireless intelligence, from algorithms to real-world systems.</p>
 </header>
 <div class="home-feature">
-  <figure class="hero-testbed">
-    <a href="{{ '/publication/wcl26' | relative_url }}" aria-label="Read about the OFDM uplink ISAC testbed">
-      <img src="{{ '/images/research/isac-testbed.webp' | relative_url }}" width="1800" height="895" fetchpriority="high" alt="OFDM uplink ISAC 실험에 사용한 안테나, SDR, 신호처리 모니터가 놓인 실제 테스트베드" lang="ko">
+  <figure class="hero-figure">
+    <a href="{{ '/publication/pieee24' | relative_url }}" aria-label="Read our survey on full-duplex network design">
+      <img src="{{ '/images/research/full-duplex-network-overview.webp' | relative_url }}" width="2000" height="1361" fetchpriority="high" alt="Full-duplex network design, connecting radio hardware and self-interference cancellation with MAC protocols, user scheduling, and cellular networks">
     </a>
-    <figcaption><span>Over-the-air ISAC testbed</span><a href="{{ '/publication/wcl26' | relative_url }}">WCL 2026 · Fig. 3 <span aria-hidden="true">↗</span></a></figcaption>
+    <figcaption><span>Full-duplex network design</span><a href="{{ '/publication/pieee24' | relative_url }}">Proceedings of the IEEE · 2024 · Fig. 1 <span aria-hidden="true">↗</span></a></figcaption>
   </figure>
   <aside class="home-news" aria-label="Recent lab news">
     <div class="section-heading"><h2>News</h2><a href="{{ '/news/' | relative_url }}">All news <span aria-hidden="true">→</span></a></div>
@@ -27,9 +27,9 @@ permalink: /
   <div class="research-cards">
     {% for area in site.data.research %}
     <article class="research-card">
-      <a class="research-photo-link" href="{{ '/research/' | relative_url }}#{{ area.id }}"><img src="{{ area.image | relative_url }}" width="{{ area.image_width }}" height="{{ area.image_height }}" loading="lazy" alt="{{ area.image_alt }}" lang="ko"></a>
+      <a class="research-photo-link" href="{{ '/research/' | relative_url }}#{{ area.id }}"><img src="{{ area.image | relative_url }}" width="{{ area.image_width }}" height="{{ area.image_height }}" loading="lazy" alt="{{ area.image_alt }}"></a>
       <h3><a href="{{ '/research/' | relative_url }}#{{ area.id }}">{{ area.title }}</a></h3>
-      <p class="ko-copy" lang="ko">{{ area.home_ko }}</p>
+      <p class="research-caption">{{ area.home }}</p>
       <a class="photo-source" href="{{ area.paper | relative_url }}">{{ area.image_credit }} <span aria-hidden="true">↗</span></a>
     </article>
     {% endfor %}
@@ -43,7 +43,7 @@ permalink: /
   </section>
   <section class="home-contact">
     <h2>Work with us</h2>
-    <p class="ko-copy" lang="ko">연구 참여·공동연구 문의</p>
+    <p class="contact-description">Research opportunities and collaboration</p>
     <a href="mailto:{{ site.email }}">{{ site.email }}</a>
     <p class="contact-more"><a href="{{ '/join/' | relative_url }}">Join WARP Lab <span aria-hidden="true">→</span></a></p>
   </section>

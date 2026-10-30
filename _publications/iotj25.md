@@ -1,6 +1,6 @@
 ---
 figure: /images/research/zero-if-testbed.webp
-figure_alt: "USRP와 전력증폭기를 이용한 전이중 Zero-IF 실험 장치 및 측정 화면"
+figure_alt: "Zero-IF full-duplex testbed with USRPs, power amplifiers, and measurement displays"
 figure_caption: "Fig. 12. Full-duplex Zero-IF testbed and measurements."
 title: "Frequency-Domain Nonlinear Self-Interference Cancellation in Full-Duplex Zero-IF Transceivers: From Algorithm to Prototype"
 collection: "publications"

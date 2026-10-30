@@ -1,6 +1,6 @@
 ---
 figure: /images/research/isac-experiment.webp
-figure_alt: "OFDM uplink ISAC의 실제 실험 장치, 신호처리 과정 및 검증 결과"
+figure_alt: "OFDM uplink ISAC experimental setup, signal-processing workflow, and validation results"
 figure_caption: "Fig. 3. OFDM uplink ISAC experimental setup and validation."
 title: "Pilot Allocation for OFDM Uplink ISAC under RF Imperfections: Analysis, Prototyping, and Tradeoffs"
 collection: "publications"

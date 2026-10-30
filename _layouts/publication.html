@@ -9,7 +9,7 @@ layout: default
   <p class="publication-venue">{{ page.venue }}</p>
   {% if page.figure %}
   <figure class="research-figure">
-    <a href="{{ page.figure | relative_url }}"><img src="{{ page.figure | relative_url }}" alt="{{ page.figure_alt }}" lang="ko"></a>
+    <a href="{{ page.figure | relative_url }}"><img src="{{ page.figure | relative_url }}" alt="{{ page.figure_alt }}"></a>
     <figcaption>{{ page.figure_caption }}</figcaption>
   </figure>
   {% endif %}
