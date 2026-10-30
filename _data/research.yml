@@ -1,11 +1,11 @@
 - id: wireless-ai
-  title: Wireless AI
-  home: Neural networks meet MIMO-OFDM
+  title: AI Wireless Systems
+  home: AI-RAN Prototyping, Deep Reinforcement Learning
   image: /images/research/semantic-testbed.webp
   image_width: 696
   image_height: 441
-  image_alt: Transmit and receive antennas, USRPs, and power amplifiers used in the MIMO-OFDM semantic communications testbed
-  image_credit: IEEE WCM 2025 · Fig. 2
+  image_alt: Transmit and receive antennas, FPGAs, and power amplifiers used in the MIMO-OFDM semantic communications testbed
+  image_credit: IEEE WCM 2025 - Fig. 2
   detail_image: /images/research/semantic-architecture.webp
   detail_alt: System architecture connecting neural encoders and decoders with a MIMO-OFDM testbed
   short: Learning and signal processing for intelligent, programmable radio systems.
@@ -19,8 +19,8 @@
   image_width: 1800
   image_height: 895
   image_alt: Antennas, software-defined radios, and signal-processing displays in the OFDM uplink ISAC testbed
-  image_credit: IEEE WCL 2026 · Fig. 3
-  detail_image: /images/research/isac-experiment.webp
+  image_credit: IEEE WCL 2026 - Fig. 3
+  detail_image: /images/researh/isac-experiment.webp
   detail_alt: OFDM uplink ISAC experimental setup, signal-processing workflow, and validation results
   short: Integrated sensing and communication, from waveforms to over-the-air experiments.
   description: We study integrated sensing and communication (ISAC) as a key application of next-generation wireless systems. Topics include near-field operation, wideband beamforming, OFDM sensing, and RF impairments, with interests extending toward satellite communications and synthetic aperture radar.
@@ -33,7 +33,7 @@
   image_width: 1360
   image_height: 836
   image_alt: Base station, transmit and receive antennas, and power amplifiers used in a full-duplex experiment
-  image_credit: IEEE TWC 2025 · Fig. 8(a)
+  image_credit: IEEE TWC 2025 - Fig. 8(a)
   detail_image: /images/research/zero-if-testbed.webp
   detail_alt: Zero-IF full-duplex testbed with two USRPs, power amplifiers, and measurement displays
   detail_paper: /publication/iotj25
