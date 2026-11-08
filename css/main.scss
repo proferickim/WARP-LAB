@@ -240,7 +240,34 @@ img { max-width: 100%; height: auto; }
 .home-intro { margin-bottom: 29px; }
 .home-intro h1 { font-size: 38px; margin-bottom: 12px; }
 .home-intro .home-description { color: $muted; margin: 0; }
-.internship-notice { margin: 0 0 38px; padding: 27px 30px 29px; background: var(--surface); font-size: 16px; font-weight: 350; line-height: 1.7; }
+// Give the recruitment notice the opposite theme's colors.
+.internship-notice {
+  color-scheme: light;
+  --surface: #f4f7fa;
+  --ink: #202c39;
+  --heading: #143759;
+  --green: #08744d;
+  --muted: #526170;
+  --blue: #1764ab;
+  --link-hover: #064d37;
+  margin: 0 0 38px;
+  padding: 27px 30px 29px;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 16px;
+  font-weight: 350;
+  line-height: 1.7;
+}
+:root[data-theme="day"] .internship-notice {
+  color-scheme: dark;
+  --surface: #14222f;
+  --ink: #d7e0e8;
+  --heading: #eff4f7;
+  --green: #8cc9b1;
+  --muted: #a9b8c6;
+  --blue: #9cc4df;
+  --link-hover: #b7e7d3;
+}
 .internship-heading { margin-bottom: 22px; }
 .internship-heading h2 { margin: 0 0 9px; color: $green; font-size: 27px; font-weight: 450; line-height: 1.4; letter-spacing: -.4px; }
 .internship-heading p { margin: 0; color: $muted; font-size: 15px; }
