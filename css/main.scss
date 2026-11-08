@@ -240,6 +240,33 @@ img { max-width: 100%; height: auto; }
 .home-intro { margin-bottom: 29px; }
 .home-intro h1 { font-size: 38px; margin-bottom: 12px; }
 .home-intro .home-description { color: $muted; margin: 0; }
+.internship-notice { margin: 0 0 38px; padding: 27px 30px 29px; background: var(--surface); font-size: 16px; font-weight: 350; line-height: 1.7; }
+.internship-heading { margin-bottom: 22px; }
+.internship-heading h2 { margin: 0 0 9px; color: $green; font-size: 27px; font-weight: 450; line-height: 1.4; letter-spacing: -.4px; }
+.internship-heading p { margin: 0; color: $muted; font-size: 15px; }
+.internship-columns { display: grid; grid-template-columns: minmax(0, 1.85fr) minmax(260px, 1fr); gap: 32px; }
+.internship-details { display: grid; gap: 12px; margin: 0; }
+.internship-details > div { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; }
+.internship-details dt { padding-top: 2px; color: $muted; font-size: 14px; font-weight: 500; }
+.internship-details dd { margin: 0; }
+.internship-tracks { display: flex; flex-wrap: wrap; gap: 2px 17px; font-size: 15px; }
+.internship-tracks span { display: inline-block; }
+.internship-consultation h3 { margin: 0 0 7px; color: $green; font-size: 14px; font-weight: 500; }
+.internship-dates { margin: 0 0 3px; color: var(--heading); font-size: 20px; font-weight: 450; line-height: 1.5; }
+.internship-dates span { font-size: 14px; font-weight: 350; white-space: nowrap; }
+.internship-visit { margin: 0; font-size: 15px; }
+.internship-enquiry { margin: 15px 0 0; color: $muted; font-size: 14px; }
+.internship-enquiry a { display: inline-block; margin-top: 3px; font-size: 17px; overflow-wrap: anywhere; }
+@media (max-width: 767px) {
+  .internship-notice { padding: 22px 20px; margin-bottom: 30px; font-size: 15px; }
+  .internship-heading { margin-bottom: 19px; }
+  .internship-heading h2 { font-size: 24px; }
+  .internship-heading p { font-size: 14px; }
+  .internship-columns { grid-template-columns: 1fr; gap: 24px; }
+  .internship-details > div { grid-template-columns: 56px minmax(0, 1fr); gap: 12px; }
+  .internship-details dt { font-size: 13px; }
+  .internship-tracks { font-size: 14px; }
+}
 .home-feature { display: grid; grid-template-columns: minmax(0, 2.5fr) minmax(220px, 1fr); gap: 32px; align-items: start; }
 .hero-figure { margin: 0; }
 .hero-figure img { display: block; width: 100%; height: auto; border: 1px solid $rule; }

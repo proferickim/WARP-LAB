@@ -20,7 +20,7 @@
   image_height: 895
   image_alt: Antennas, software-defined radios, and signal-processing displays in the OFDM uplink ISAC testbed
   image_credit: IEEE WCL 2026 - Fig. 3
-  detail_image: /images/researh/isac-experiment.webp
+  detail_image: /images/research/isac-experiment.webp
   detail_alt: OFDM uplink ISAC experimental setup, signal-processing workflow, and validation results
   short: Integrated sensing and communication, from waveforms to over-the-air experiments.
   description: We study integrated sensing and communication (ISAC) as a key application of next-generation wireless systems. Topics include near-field operation, wideband beamforming, OFDM sensing, and RF impairments, with interests extending toward satellite communications and synthetic aperture radar.
